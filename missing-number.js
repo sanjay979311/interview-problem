@@ -11,6 +11,22 @@
 // }
 // console.log(missing.toString())
 
+
+//right way 
+
+const arr3 = [1, 4, 7,15,9];
+arr3.sort((a,b) => a-b)
+let m = arr3[arr3.length-1];
+console.log(m)
+ let missing2 = [];
+for(let i=1; i<=m; i++){
+    if(!arr3.includes(i)){
+        missing2.push(i)
+    }
+}
+console.log(missing2)
+
+
 const arr = [1, 4, 7];
 const n = arr[arr.length - 1];
 const missing = [];

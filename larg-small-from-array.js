@@ -20,3 +20,42 @@ for (let i = 0, j = arr.length - 1; i <= j; i++, j--) {
 
 // Printing the result array
 console.log(result);
+
+
+let arr2s = [1, 9, 5, 7, 2];
+arr.sort((a, b) => a - b);
+
+let start = 0;
+let end = arr.length - 1;
+
+
+
+function largeSmall(arr){
+    arr.sort((a,b) => a-b)
+    let newArr = [];
+    let start = 0;
+    let end = arr.length-1
+    
+    while(start <= end){
+    
+    if(arr[start] !== arr[end]){
+    
+    newArr.push(arr[end])
+    
+    }
+    
+    newArr.push(arr[start])
+    
+    start ++
+    
+    end --
+    
+    }
+    
+    return newArr
+    
+    }
+    
+    let output = largeSmall(arr)
+    
+    console.log(output)

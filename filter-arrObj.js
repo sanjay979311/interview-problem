@@ -15,6 +15,13 @@ let obj = [
     console.log(newArr)
     
     
+
+
+        
+       let arr =  obj.filter((item) => {
+           return item.name === "aditi"  &&  item.phone==="12345678"
+       })
+       console.log(arr)
     
     
     
