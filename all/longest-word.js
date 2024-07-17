@@ -1,5 +1,18 @@
 const stringArray = ["apple", "banana", "orange", "kiwi"];
 
+
+const arr1 = ["apple", "banana", "orange", "kiwi"];
+ 
+ let langeWord = arr1[0];
+ for(let i=0; i<arr1.length;i++){
+     if(arr1[i].length > langeWord.length){
+        langeWord = arr1[i] 
+     }
+ }
+ 
+ console.log(langeWord)
+//  -------------------------------------------
+
 function findLongestWord(array) {
   let longestWord = "";
   for (let i = 0; i < array.length; i++) {

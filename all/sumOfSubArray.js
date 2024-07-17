@@ -33,3 +33,30 @@ function getSubSum(arr,target){
 let output = getSubSum(arr,target)
 console.log(output)
 
+
+
+
+
+function getSubSum(arr, target) {
+    const seen = new Set();
+    const result = [];
+    
+    for (let i = 0; i < arr.length; i++) {
+        const num = arr[i];
+        const component = target - num;
+        
+        if (seen.has(component)) {
+            result.push([component, num]);
+            // Remove the used components to avoid repeated output
+            seen.delete(component);
+        }
+        
+        seen.add(num);
+    }
+    
+    return result;
+}
+
+const output2 = getSubSum(arr, target);
+console.log(output2);
+

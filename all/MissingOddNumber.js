@@ -1,4 +1,4 @@
-let arr = [5,7,9,11,15,18];;
+let arr = [5,7,9,11,15,18];
 // output = 13
 let n = arr[arr.length-1];
 
